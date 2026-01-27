@@ -2,6 +2,7 @@ package org.APCSLowell;
 
 public class Palindrome {
     public boolean palindrome(String s) {
+        s.toLowerCase();
         String t = new String("");
         for(int i = s.length()-1; i >= 0;i--){
             t = t + s.charAt(i);
