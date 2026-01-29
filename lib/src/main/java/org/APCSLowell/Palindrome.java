@@ -6,12 +6,12 @@ public class Palindrome {
         String m = new String ("");
         String t = new String("");
         for(int i = l.length()-1; i >= 0;i--){
-            if(l.charAt(i) != ' ' && Character.isLetter(l.charAt(i))){
+            if(l.charAt(i) != ' ' || Character.isLetter(l.charAt(i))){
                 t = t + l.charAt(i);
             }
         }
         for(int i = 0; i < l.length();i++){
-            if(l.charAt(i) != ' ' && Character.isLetter(l.charAt(i))){
+            if(l.charAt(i) != ' ' || Character.isLetter(l.charAt(i))){
                 m = m + l.charAt(i);
             }
         }
