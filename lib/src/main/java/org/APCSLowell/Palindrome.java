@@ -13,7 +13,7 @@ public class Palindrome {
         return false;
     }
     public String reverse(String s) {
-        String n = new String();
+        String n = new String("");
         for(int i = s.length()-1; i >= 0;i--){
             n = n + s.charAt(i);
         }
