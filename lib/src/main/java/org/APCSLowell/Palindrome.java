@@ -2,12 +2,20 @@ package org.APCSLowell;
 
 public class Palindrome {
     public boolean palindrome(String s) {
-        s.toLowerCase();
+        String l = s.toLowerCase();
+        String m = new String ("");
         String t = new String("");
-        for(int i = s.length()-1; i >= 0;i--){
-            t = t + s.charAt(i);
+        for(int i = l.length()-1; i >= 0;i--){
+            if(l.charAt(i) != ' ' && Character.isLetter(l.charAt(i))){
+                t = t + l.charAt(i);
+            }
         }
-        if(t.equals(s)){
+        for(int i = 0; i < l.length();i++){
+            if(l.charAt(i) != ' ' && Character.isLetter(l.charAt(i))){
+                m = m + l.charAt(i);
+            }
+        }
+        if(t.equals(l)){
             return true;
         }
         return false;
